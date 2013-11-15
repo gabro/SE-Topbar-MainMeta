@@ -40,3 +40,7 @@ with_jquery(function($) {
 		$(".topbar-menu-links").prepend("<a href='http://" + document.location.host + "'>meta</a>");
 	}
 });
+
+with_jquery(function($) {
+    $(".profile-me > div:first").append("<span class='links-container' style='color:#aaa'>" + $(".profile-me > div:first").attr('title') + "</span>");
+});
